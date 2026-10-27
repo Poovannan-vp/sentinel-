@@ -1,0 +1,37 @@
+{
+  "_note": "Synthetic demo data. Not real institutions or students.",
+  "institutions": [
+    {
+      "id": "dit",
+      "name": "Demo Institute of Technology",
+      "state": "Karnataka",
+      "type": "Non-PGDM",
+      "lastSyncedMinutes": 14,
+      "programmes": [
+        { "id": "dit-cse", "name": "B.Tech Computer Science", "intake": 100, "reported": 120, "active": 96, "supernumerary": 4, "nri": 6, "oci": 1, "fn": 0, "snapshots": [10, 22, 33, 44, 55, 64, 72, 79, 85, 89, 91, 92, 93, 94, 95, 95, 95, 96, 96] },
+        { "id": "dit-ece", "name": "B.Tech Electronics", "intake": 84, "reported": 86, "active": 81, "supernumerary": 2, "nri": 3, "oci": 0, "fn": 1, "snapshots": [6, 14, 23, 32, 40, 47, 54, 60, 65, 69, 72, 74, 76, 77, 78, 79, 80, 80, 81] }
+      ]
+    },
+    {
+      "id": "mgit",
+      "name": "Metro Gateway Institute of Technology",
+      "state": "Tamil Nadu",
+      "type": "Non-PGDM",
+      "lastSyncedMinutes": 52,
+      "programmes": [
+        { "id": "mgit-mech", "name": "B.E. Mechanical", "intake": 112, "reported": 110, "active": 104, "supernumerary": 3, "nri": 2, "oci": 0, "fn": 0, "snapshots": [20, 34, 47, 60, 72, 83, 92, 97, 100, 101, 102, 102, 103, 103, 103, 103, 104, 104, 104] },
+        { "id": "mgit-civil", "name": "B.E. Civil", "intake": 60, "reported": 58, "active": 49, "supernumerary": 0, "nri": 1, "oci": 0, "fn": 0, "snapshots": [8, 15, 22, 28, 33, 37, 40, 42, 44, 45, 46, 46, 47, 47, 48, 48, 49, 49, 49] }
+      ]
+    },
+    {
+      "id": "sbc",
+      "name": "Sri Bhavani College of Management",
+      "state": "Telangana",
+      "type": "PGDM",
+      "lastSyncedMinutes": 3,
+      "programmes": [
+        { "id": "sbc-pgdm", "name": "PGDM Business Analytics", "intake": 120, "reported": 118, "active": 117, "supernumerary": 0, "nri": 4, "oci": 1, "fn": 0, "snapshots": [40, 60, 78, 92, 101, 107, 111, 113, 114, 115, 115, 116, 116, 116, 117, 117, 117, 117, 117] }
+      ]
+    }
+  ]
+}

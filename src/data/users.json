@@ -1,0 +1,47 @@
+{
+  "_note": "Demo accounts only. Passwords are stored as SHA-256 hashes for the demo; this is not production authentication.",
+  "otpDemoCode": "123456",
+  "users": [
+    {
+      "username": "college",
+      "passwordSha256": "40ed712a3ab15f830a9e738b58a3e382e5e6263f552f91faebd713b184e8989a",
+      "role": "college",
+      "displayName": "Dr. Asha Rao, Registrar",
+      "institutionId": "dit",
+      "hint": "Uploads and fixes your institution's records"
+    },
+    {
+      "username": "aicte",
+      "passwordSha256": "bd2f076c34f53d2024003dc9df58ce316e96920044bf58a9befe7eca6a5c4972",
+      "role": "aicte",
+      "displayName": "R. Menon, AICTE Regional Office",
+      "institutionId": null,
+      "hint": "Monitors all institutions, reviews flags, revokes credentials"
+    },
+    {
+      "username": "student",
+      "passwordSha256": "703b0a3d6ad75b649a28adde7d83c6251da457549263bc7ff45ec709b0a8448b",
+      "role": "student",
+      "displayName": "Student 1042",
+      "institutionId": "dit",
+      "studentRef": "ref-7f3a9c",
+      "hint": "Sees your own record and who verified it; can stop access"
+    },
+    {
+      "username": "verifier",
+      "passwordSha256": "9d6ca2185eba968706ba9ef07abde8e2dd8d7555f2d2590968a402318ac8cf9c",
+      "role": "verifier",
+      "displayName": "Ramesh Industries HR",
+      "institutionId": null,
+      "hint": "Requests one claim for a stated purpose; never sees the full record"
+    },
+    {
+      "username": "admin",
+      "passwordSha256": "240be518fabd2724ddb6f04eeb1da5967448d7e831c08c8fa822809f74c720a9",
+      "role": "sysadmin",
+      "displayName": "System administrator",
+      "institutionId": null,
+      "hint": "Manages users and configuration; cannot open student records"
+    }
+  ]
+}

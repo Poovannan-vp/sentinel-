@@ -1,0 +1,74 @@
+{
+  "_note": "Synthetic demo data. Student names and IDs are invented. APAAR IDs are stored masked where the UI shows them.",
+  "student": {
+    "ref": "ref-7f3a9c",
+    "name": "Student 1042",
+    "apaar": "AP10428841",
+    "studentId": "DIT/2026/0412",
+    "instId": "dit",
+    "progId": "dit-cse",
+    "category": "OBC",
+    "admissionDate": "2026-07-02",
+    "status": "active",
+    "programme": "B.Tech Computer Science",
+    "institution": "Demo Institute of Technology",
+    "year": "2026-27"
+  },
+  "roster": [
+    { "name": "Aarav Sharma", "apaar": "AP10000101", "instId": "dit", "progId": "dit-cse", "category": "General", "admissionDate": "2026-07-02", "status": "active" },
+    { "name": "Diya Menon", "apaar": "AP10000102", "instId": "dit", "progId": "dit-cse", "category": "OBC", "admissionDate": "2026-07-02", "status": "active" },
+    { "name": "Rohan Iyer", "apaar": "AP10000103", "instId": "dit", "progId": "dit-cse", "category": "General", "admissionDate": "2026-07-03", "status": "withdrawn" },
+    { "name": "Meera Nair", "apaar": "AP10000104", "instId": "dit", "progId": "dit-cse", "category": "SC", "admissionDate": "2026-07-05", "status": "active" },
+    { "name": "Kabir Khan", "apaar": "AP10000105", "instId": "dit", "progId": "dit-cse", "category": "NRI", "admissionDate": "2026-07-06", "status": "active" },
+    { "name": "Ananya Rao", "apaar": "AP10000106", "instId": "dit", "progId": "dit-ece", "category": "General", "admissionDate": "2026-07-08", "status": "active" },
+    { "name": "Vikram Patil", "apaar": "AP10000107", "instId": "dit", "progId": "dit-ece", "category": "EWS", "admissionDate": "2026-07-08", "status": "transferred" },
+    { "name": "Sana Qureshi", "apaar": "AP10000108", "instId": "mgit", "progId": "mgit-mech", "category": "OBC", "admissionDate": "2026-07-10", "status": "active" },
+    { "name": "Student 1042", "apaar": "AP10428841", "instId": "dit", "progId": "dit-cse", "category": "OBC", "admissionDate": "2026-07-02", "status": "active" }
+  ],
+  "flags": [
+    {
+      "id": "F-1", "instId": "dit", "progId": "dit-cse", "rule": "GS-01 v1.2", "title": "Unverified seats · 24",
+      "evidence": "No fee, exam or attendance signal in 30 days for 24 enrolments.", "days": 14,
+      "missingSignals": ["fee payment", "exam registration", "attendance feed"],
+      "confidence": "Medium", "state": "open", "reason": "",
+      "notes": [{ "author": "Dr. Asha Rao (Registrar)", "at": "18 Oct, 16:20", "text": "Fee portal was down on 12th. Re-sync requested." }]
+    },
+    {
+      "id": "F-2", "instId": "dit", "progId": "dit-cse", "rule": "BR-02 v1.0", "title": "Breach projected · B.Tech CSE",
+      "evidence": "Pace from the last 7 days reaches intake 100 within the range shown.", "days": 9,
+      "missingSignals": [], "confidence": "High", "state": "open", "reason": "", "notes": []
+    },
+    {
+      "id": "F-3", "instId": "dit", "progId": "dit-ece", "rule": "DQ-01 v1.0", "title": "NRI count differs from upload file",
+      "evidence": "Upload file has 3 NRI rows; the record shows 2.", "days": 20,
+      "missingSignals": [], "confidence": "High", "state": "open", "reason": "", "notes": []
+    },
+    {
+      "id": "F-4", "instId": "mgit", "progId": "mgit-mech", "rule": "BR-02 v1.0", "title": "Near intake · B.E. Mechanical",
+      "evidence": "104 of 112 seats used; pace projects a breach in about 40 days.", "days": 40,
+      "missingSignals": [], "confidence": "Medium", "state": "open", "reason": "", "notes": []
+    }
+  ],
+  "duplicates": [
+    { "ref": "kh_3f9a21c7", "instIds": ["dit", "mgit"], "state": "open" }
+  ],
+  "uploads": [
+    { "id": "UP-2611", "instId": "dit", "file": "dit_cse_batch_2026-08.csv", "at": "18 Aug 2026, 10:42", "rows": 120, "accepted": 112, "correctable": 6, "review": 2 },
+    { "id": "UP-2598", "instId": "dit", "file": "dit_ece_batch_2026-07.csv", "at": "02 Jul 2026, 15:08", "rows": 86, "accepted": 84, "correctable": 2, "review": 0 },
+    { "id": "UP-2540", "instId": "mgit", "file": "mgit_mech_2026-08.csv", "at": "11 Aug 2026, 09:15", "rows": 110, "accepted": 108, "correctable": 1, "review": 1 }
+  ],
+  "consents": [
+    { "id": "REQ-901", "studentRef": "ref-7f3a9c", "requester": "Ramesh Industries HR", "purpose": "Employment background check", "claim": "holds a B.Tech in Computer Science from an approved institution", "at": "20 Oct 2026, 11:04", "status": "granted" },
+    { "id": "REQ-887", "studentRef": "ref-7f3a9c", "requester": "State Bank of India (KYC)", "purpose": "Account opening", "claim": "graduate of an approved institution", "at": "02 Oct 2026, 13:22", "status": "revoked" }
+  ],
+  "rules": [
+    { "code": "GS-01", "version": "1.2", "description": "Enrolled seat with no activity signal over the threshold period", "threshold": "30 days", "active": true },
+    { "code": "BR-02", "version": "1.0", "description": "Admission pace reaches approved intake within the forecast horizon", "threshold": "14 days warning", "active": true },
+    { "code": "DQ-01", "version": "1.0", "description": "Category counts differ between upload file and record", "threshold": "any difference", "active": true },
+    { "code": "DUP-01", "version": "1.1", "description": "Same APAAR ID inside one upload", "threshold": "any match", "active": true }
+  ],
+  "apiClients": [
+    { "name": "College ERP sync", "institution": "Demo Institute of Technology", "scopes": "records:write, flags:read", "rateLimit": "60 req/min", "status": "active" },
+    { "name": "Employer verifier", "institution": "AICTE (shared)", "scopes": "claims:request", "rateLimit": "20 req/min", "status": "active" }
+  ]
+}
